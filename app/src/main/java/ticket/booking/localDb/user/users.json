@@ -53,5 +53,59 @@
         }
       }
     ]
+  },
+  {
+    "user_id": "5678",
+    "name": "Jane Smith",
+    "hashed_password": "e99a18c428cb38d5f260853678922e03",
+    "tickets_booked": [
+      {
+        "source": "Chennai",
+        "destination": "Kolkata",
+        "date_travel": "2023-10-02T09:00:00Z",
+        "train": {
+          "train_id": "train_002",
+          "train_no": "67890",
+          "seats": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "stations": {
+            "Chennai": "08:00:00",
+            "Kolkata": "14:00:00"
+          }
+        }
+      }
+    ]
   }
 ]
