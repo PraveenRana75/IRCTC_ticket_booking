@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+
 public class UserBookingService
 {
     private User user;
@@ -28,7 +29,7 @@ public class UserBookingService
 
     public Boolean loginUser(){
         Optional<User> foundUser = userList.stream().filter(user1->{
-            return user1.getName().equals(user.getName()) && userServiceUtil.checkPassword(user.getPassword(),user1,).equals(user.getPassword());
+            return user1.getName().equals(user.getName()) && UserBookingService.checkPassword(user.getPassword(),user1,).equals(user.getPassword());
                 })
                 .filter(u -> u.getName().equals(user.getName()) && u.getPassword().equals(user.getPassword()))
                 .findFirst();
