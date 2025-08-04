@@ -33,6 +33,16 @@ public class UserBookingService
                 })
                 .filter(u -> u.getName().equals(user.getName()) && u.getPassword().equals(user.getPassword()))
                 .findFirst();
+                return foundUser.equals();
+
+    }
+    public Boolean signUpUser() throws IOException {
+        if (userList.stream().anyMatch(u -> u.getName().equals(user.getName()))) {
+            return false; // User already exists
+        }
+        userList.add(user);
+        objectMapper.writeValue(new File(USER_PATH), userList);
+        return true; // User successfully signed up
     }
 
 
